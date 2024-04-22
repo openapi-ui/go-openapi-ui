@@ -2,7 +2,7 @@ package ginopenapiui
 
 import (
 	"github.com/gin-gonic/gin"
-	doc "github.com/rookie-luochao/go-openapi-ui"
+	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
 )
 
 func New(doc doc.Doc) gin.HandlerFunc {

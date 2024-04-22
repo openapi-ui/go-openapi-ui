@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	doc "github.com/rookie-luochao/go-openapi-ui"
 	ginopenapiui "github.com/rookie-luochao/go-openapi-ui/gin"
+	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
 )
 
 func main() {

@@ -3,6 +3,7 @@ module github.com/rookie-luochao/go-openapi-ui/_examples/fiber
 go 1.21.6
 
 replace github.com/rookie-luochao/go-openapi-ui => ../../
+
 replace github.com/rookie-luochao/go-openapi-ui/fiber => ../../fiber
 
 require (
@@ -23,5 +24,5 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.51.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
-	golang.org/x/sys v0.15.0 // indirect
+	golang.org/x/sys v0.19.0 // indirect
 )

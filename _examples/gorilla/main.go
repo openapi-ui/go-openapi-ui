@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/rookie-luochao/go-openapi-ui"
+	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
 )
 
 func main() {
