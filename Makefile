@@ -3,6 +3,9 @@
 DOC_PATH=assets/openapi-ui.umd.js
 DOC_URL=https://cdn.jsdelivr.net/npm/openapi-ui-dist@latest/lib/openapi-ui.umd.js
 
+run-echo:
+	cd _examples/echo && go run .
+
 all: $(DOC_PATH) lint test
 
 lint:
