@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
-	fiberredoc "github.com/rookie-luochao/go-openapi-ui/fiber"
 	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
+	fiberopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/fiber"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 	}
 
 	r := fiber.New()
-	r.Use(fiberredoc.New(doc))
+	r.Use(fiberopenapiui.New(doc))
 
 	println("Documentation served at http://127.0.0.1:8000/docs")
 	panic(r.Listen(":8000"))

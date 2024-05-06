@@ -4,12 +4,12 @@
 
 The template is based on the OpenAPI-UI [bundle.js](https://github.com/rookie-luochao/openapi-ui/blob/master/lib/openapi-ui.umd.js) with the script already placed in the html instead of depending on a CDN.
 
-This package does not generate openapi spec file. Check [this example](_examples/gen) for using code generation with swag.
+This package does not generate openapi spec file. Check [this example](https://github.com/swaggo/swag/tree/master/example) for using code generation with swag.
 
 ## Usage
 
 ```go
-import "github.com/rookie-luochao/go-openapi-ui"
+import "github.com/rookie-luochao/go-openapi-ui/pkg/doc"
 
 ...
 
@@ -27,7 +27,7 @@ doc := doc.Doc{
 ```go
 import (
 	"net/http"
-	"github.com/rookie-luochao/go-openapi-ui"
+	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
 )
 
 ...
@@ -40,8 +40,8 @@ http.ListenAndServe(address, doc.Handler())
 ```go
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/rookie-luochao/go-openapi-ui"
-	ginopenapiui "github.com/rookie-luochao/go-openapi-ui/gin"
+	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
+	ginopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/gin"
 )
 
 ...
@@ -55,8 +55,8 @@ r.Use(ginopenapiui.New(doc))
 ```go
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/rookie-luochao/go-openapi-ui"
-	echoopenapiui "github.com/rookie-luochao/go-openapi-ui/echo"
+	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
+	echoopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/echo"
 )
 
 ...
@@ -70,8 +70,8 @@ r.Use(echoopenapiui.New(doc))
 ```go
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/rookie-luochao/go-openapi-ui"
-	fiberopenapiui "github.com/rookie-luochao/go-openapi-ui/fiber"
+	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
+	fiberopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/fiber"
 )
 
 ...
@@ -82,7 +82,7 @@ r.Use(fiberopenapiui.New(doc))
 
 See [examples](/_examples)
 
-## 致谢
+## Thanks
 
 - [go-redoc](https://github.com/mvrilo/go-redoc)
 

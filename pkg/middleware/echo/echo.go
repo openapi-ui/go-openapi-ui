@@ -1,4 +1,4 @@
-package echo
+package echoopenapiui
 
 import (
 	"github.com/labstack/echo/v4"
