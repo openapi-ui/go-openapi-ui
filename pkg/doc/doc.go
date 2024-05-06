@@ -21,6 +21,7 @@ type Doc struct {
 	SpecFS      *embed.FS
 	Title       string
 	Description string
+	Theme       string
 }
 
 // HTML represents the openapi-ui index.html page
@@ -46,6 +47,7 @@ func (r Doc) Body() ([]byte, error) {
 		"title":       r.Title,
 		"url":         r.SpecPath,
 		"description": r.Description,
+		"theme":       r.Theme,
 	}); err != nil {
 		return nil, err
 	}

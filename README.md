@@ -19,6 +19,7 @@ doc := doc.Doc{
     SpecFile:    "./openapi.json", // "./openapi.yaml"
     SpecPath:    "/openapi.json",  // "/openapi.yaml"
     DocsPath:    "/docs",
+		Theme:       "light", // default is light, support light or dark
 }
 ```
 
