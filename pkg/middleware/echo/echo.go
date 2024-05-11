@@ -2,7 +2,7 @@ package echoopenapiui
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
+	"github.com/openapi-ui/go-openapi-ui/pkg/doc"
 )
 
 func New(doc doc.Doc) echo.MiddlewareFunc {

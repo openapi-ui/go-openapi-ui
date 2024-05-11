@@ -9,7 +9,7 @@ This package does not generate openapi spec file. Check [this example](https://g
 ## Usage
 
 ```go
-import "github.com/rookie-luochao/go-openapi-ui/pkg/doc"
+import "github.com/openapi-ui/go-openapi-ui/pkg/doc"
 
 ...
 
@@ -28,7 +28,7 @@ doc := doc.Doc{
 ```go
 import (
 	"net/http"
-	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
+	"github.com/openapi-ui/go-openapi-ui/pkg/doc"
 )
 
 ...
@@ -41,8 +41,8 @@ http.ListenAndServe(address, doc.Handler())
 ```go
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
-	ginopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/gin"
+	"github.com/openapi-ui/go-openapi-ui/pkg/doc"
+	ginopenapiui "github.com/openapi-ui/go-openapi-ui/pkg/middleware/gin"
 )
 
 ...
@@ -56,8 +56,8 @@ r.Use(ginopenapiui.New(doc))
 ```go
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
-	echoopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/echo"
+	"github.com/openapi-ui/go-openapi-ui/pkg/doc"
+	echoopenapiui "github.com/openapi-ui/go-openapi-ui/pkg/middleware/echo"
 )
 
 ...
@@ -71,8 +71,8 @@ r.Use(echoopenapiui.New(doc))
 ```go
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
-	fiberopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/fiber"
+	"github.com/openapi-ui/go-openapi-ui/pkg/doc"
+	fiberopenapiui "github.com/openapi-ui/go-openapi-ui/pkg/middleware/fiber"
 )
 
 ...

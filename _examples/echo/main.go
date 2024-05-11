@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/labstack/echo/v4"
-	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
-	echoopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/echo"
+	"github.com/openapi-ui/go-openapi-ui/pkg/doc"
+	echoopenapiui "github.com/openapi-ui/go-openapi-ui/pkg/middleware/echo"
 )
 
 func main() {

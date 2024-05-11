@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
+	"github.com/openapi-ui/go-openapi-ui/pkg/doc"
 )
 
 func main() {

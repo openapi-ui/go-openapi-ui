@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/rookie-luochao/go-openapi-ui/pkg/doc"
-	fiberopenapiui "github.com/rookie-luochao/go-openapi-ui/pkg/middleware/fiber"
+	"github.com/openapi-ui/go-openapi-ui/pkg/doc"
+	fiberopenapiui "github.com/openapi-ui/go-openapi-ui/pkg/middleware/fiber"
 )
 
 func main() {

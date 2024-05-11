@@ -1,4 +1,4 @@
-module github.com/rookie-luochao/go-openapi-ui
+module github.com/openapi-ui/go-openapi-ui
 
 go 1.17
 
