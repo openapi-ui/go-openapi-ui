@@ -2,8 +2,10 @@ package doc
 
 import (
 	"bytes"
-	"embed"
+	_ "embed"
 	"errors"
+	"io"
+	"io/fs"
 	"net/http"
 	"os"
 	"strings"
@@ -18,7 +20,7 @@ type Doc struct {
 	DocsPath    string
 	SpecPath    string
 	SpecFile    string
-	SpecFS      *embed.FS
+	SpecFS      fs.FS
 	Title       string
 	Description string
 	Theme       string
@@ -78,7 +80,12 @@ func (r Doc) Handler() http.HandlerFunc {
 			panic(err)
 		}
 	} else {
-		spec, err = r.SpecFS.ReadFile(specFile)
+		handle, err := r.SpecFS.Open(specFile)
+		if err != nil {
+			panic(err)
+		}
+
+		spec, err = io.ReadAll(handle)
 		if err != nil {
 			panic(err)
 		}
